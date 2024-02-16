@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overtime Bonus Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <label for="soldAmount">Sold Amount:</label>
+    <input type="number" id="soldAmount">
+    <br>
+    <label for="currentQuota">Current Quota:</label>
+    <input type="number" id="currentQuota">
+    <br>
+    <label for="daysUntilSell">Days Until Sell:</label>
+    <select id="daysUntilSell">
+      <option value="3">3</option>
+      <option value="2">2</option>
+      <option value="1">1</option>
+      <option value="0">-1 (0 days left)</option>
+    </select>
+    <br>
+    <button id="calculateButton">Calculate</button>
+    <br>
+    <div id="overtimeBonus"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
